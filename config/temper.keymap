@@ -19,11 +19,11 @@
 #define RIGHT_KEYS 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right-hand keys
 
 &lt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
 };
 
 &mt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -40,7 +40,7 @@
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             hold-trigger-key-positions = <RIGHT_KEYS>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
@@ -50,7 +50,7 @@
             label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             hold-trigger-key-positions = <LEFT_KEYS>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
