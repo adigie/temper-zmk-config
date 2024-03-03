@@ -63,7 +63,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SUPER_BACKSPACE";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+            bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         smart_shft: smart_shift {
