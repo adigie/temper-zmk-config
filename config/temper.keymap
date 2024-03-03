@@ -15,8 +15,8 @@
 #define FUN 3
 
 // 36 keys layout
-#define LEFT_KEYS 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  // left-hand keys
-#define RIGHT_KEYS 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right-hand keys
+#define LEFT_KEYS 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 // left-hand keys
+#define RIGHT_KEYS 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35 // right-hand keys
 
 &lt {
     tapping-term-ms = <200>;
