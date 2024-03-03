@@ -14,6 +14,10 @@
 #define NAV 2
 #define FUN 3
 
+// 36 keys layout
+#define LEFT_KEYS 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  // left-hand keys
+#define RIGHT_KEYS 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right-hand keys
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -23,6 +27,26 @@
         };
     };
     behaviors {
+        lhm: left_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <RIGHT_KEYS>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+        };
+        rhm: right_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <LEFT_KEYS>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+        };
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
@@ -89,7 +113,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         &kp Q         &kp W         &kp E         &kp R         &kp T              &kp Y        &kp U         &kp I         &kp O         &kp P   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp A         &kp S         &kp D         &kp F         &kp G              &kp H        &kp J         &kp K         &kp L       &kp SEMI
+     &lhm LGUI A   &lhm LALT S   &lhm LCTRL D  &lhm LSHFT F  &lhm RALT G       &rhm RALT H   &rhm LSHFT J  &rhm LCTRL K  &rhm LALT L  &rhm LGUI SEMI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp V         &kp B              &kp N        &kp M       &kp COMMA      &kp DOT      &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
