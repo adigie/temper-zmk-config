@@ -22,6 +22,10 @@
     tapping-term-ms = <100>;
 };
 
+&mt {
+    tapping-term-ms = <100>;
+};
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -121,7 +125,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp V         &kp B              &kp N        &kp M       &kp COMMA      &kp DOT      &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp LGUI    &lt NUM TAB    &smart_shft      &kp SPACE     &lt NAV RET   &super_bspc
+                                 &mt LGUI ESC  &lt NUM TAB    &smart_shft      &kp SPACE     &lt NAV RET   &super_bspc
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
