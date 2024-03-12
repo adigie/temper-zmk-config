@@ -96,6 +96,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        caps_combo {
+            bindings = <&caps_word>;
+            key-positions = <14 15>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -104,7 +113,7 @@
 &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y        &kp U         &kp I               &kp O        &kp P
 &lhm LGUI A  &lhm LALT S  &lhm LCTRL D  &lhm LSHFT F  &lhm RALT G  &rhm RALT H  &rhm LSHFT J  &rhm LCTRL K        &rhm LALT L  &rhm LGUI SEMI
 &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N        &kp M         &kp COMMA           &kp DOT      &kp FSLH
-                          &lt 3 ESC     &lt 2 TAB     &smart_shft  &kp RET      &lt 1 SPACE   &lt_super_bspc 4 0
+                          &lt 3 GRAVE   &lt 2 ESC     &kp TAB      &kp RET      &lt 1 SPACE   &lt_super_bspc 4 0
             >;
         };
 
