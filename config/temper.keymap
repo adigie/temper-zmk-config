@@ -141,10 +141,10 @@
 
         f_layer {
             bindings = <
-&none   &none   &none   &none   &none   &none   &none    &none    &none   &none
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7   &kp F8   &kp F9  &kp F10
-&none   &none   &none   &none   &none   &none   &kp F11  &kp F12  &none   &none
-                &none   &none   &none   &none   &none    &none
+&none         &none         &none          &none          &none         &none         &none          &none          &none         &none
+&lhm LGUI F1  &lhm LALT F2  &lhm LCTRL F3  &lhm LSHFT F4  &lhm RALT F5  &rhm RALT F6  &rhm LSHFT F7  &rhm LCTRL F8  &rhm LALT F9  &rhm LGUI F10
+&none         &none         &none          &none          &none         &none         &kp F11        &kp F12        &none         &none
+                            &none          &none          &none         &none         &none          &none
             >;
         };
 
