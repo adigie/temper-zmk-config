@@ -105,19 +105,19 @@
 
         num_layer {
             bindings = <
-&none      &none   &none   &none   &none   &none   &none   &none   &none   &none
-&kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&none      &none   &none   &none   &none   &none   &none   &none   &none   &none
-                   &trans  &trans  &trans  &trans  &trans  &trans
+&none         &none         &none          &none          &none         &none         &none          &none          &none         &none
+&lhm LGUI N1  &lhm LALT N2  &lhm LCTRL N3  &lhm LSHFT N4  &lhm RALT N5  &rhm RALT N6  &rhm LSHFT N7  &rhm LCTRL N8  &rhm LALT N9  &rhm LGUI N0
+&none         &none         &none          &none          &none         &none         &none          &none          &none         &none
+                            &trans         &trans         &trans        &trans        &trans         &trans
             >;
         };
 
         sym_layer {
             bindings = <
-&kp PIPE  &kp TILDE  &kp DQT   &none      &kp COMMA  &kp LPAR   &kp LBRC          &kp RBRC   &kp RPAR  &kp PLUS
-&kp EXCL  &kp AT     &kp HASH  &kp DLLR   &kp PRCNT  &kp CARET  &kp AMPS          &kp ASTRK  &none     &kp MINUS
-&kp BSLH  &kp GRAVE  &kp SQT   &kp UNDER  &kp DOT    &kp LT     &kp LEFT_BRACKET  &kp RBKT   &kp GT    &kp EQUAL
-                     &trans    &trans     &trans     &trans     &trans            &trans
+&kp PIPE        &kp TILDE     &kp DQT          &none            &kp COMMA        &kp LPAR         &kp LBRC         &kp RBRC          &kp RPAR     &kp MINUS
+&lhm LGUI EXCL  &lhm LALT AT  &lhm LCTRL HASH  &lhm LSHFT DLLR  &lhm RALT PRCNT  &rhm RALT CARET  &rhm LSHFT AMPS  &rhm LCTRL ASTRK  &rhm LALT 0  &rhm LGUI PLUS
+&kp BSLH        &kp GRAVE     &kp SQT          &kp UNDER        &kp DOT          &kp LT           &kp LEFT_BRACKET &kp RBKT          &kp GT       &kp EQUAL
+                              &trans           &trans           &trans           &trans           &trans           &trans
             >;
         };
 
