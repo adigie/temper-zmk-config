@@ -23,18 +23,13 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        nav_cond {
-            if-layers = <1 2>;
-            then-layer = <4>;
-        };
-
         f_cond {
-            if-layers = <1 3>;
+            if-layers = <1 2>;
             then-layer = <5>;
         };
 
         bt_cond {
-            if-layers = <2 3>;
+            if-layers = <3 4>;
             then-layer = <6>;
         };
     };
@@ -89,6 +84,16 @@
 
             mods = <(MOD_LSFT)>;
         };
+
+        lt_super_bspc: lt_super_bspc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_SUPER_BSPC";
+            bindings = <&mo>, <&super_bspc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -96,10 +101,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y        &kp U         &kp I         &kp O        &kp P
-&lhm LGUI A  &lhm LALT S  &lhm LCTRL D  &lhm LSHFT F  &lhm RALT G  &rhm RALT H  &rhm LSHFT J  &rhm LCTRL K  &rhm LALT L  &rhm LGUI SEMI
-&kp Z        &kp X        &kp C         &kp V         &kp B        &kp N        &kp M         &kp COMMA     &kp DOT      &kp FSLH
-                          &lt 3 ESC     &lt 2 TAB     &smart_shft  &kp RET      &lt 1 SPACE   &super_bspc
+&kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y        &kp U         &kp I               &kp O        &kp P
+&lhm LGUI A  &lhm LALT S  &lhm LCTRL D  &lhm LSHFT F  &lhm RALT G  &rhm RALT H  &rhm LSHFT J  &rhm LCTRL K        &rhm LALT L  &rhm LGUI SEMI
+&kp Z        &kp X        &kp C         &kp V         &kp B        &kp N        &kp M         &kp COMMA           &kp DOT      &kp FSLH
+                          &lt 3 ESC     &lt 2 TAB     &smart_shft  &kp RET      &lt 1 SPACE   &lt_super_bspc 4 0
             >;
         };
 
