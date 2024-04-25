@@ -101,7 +101,22 @@
 
         caps_combo {
             bindings = <&caps_word>;
-            key-positions = <14 15>;
+            key-positions = <13 16>;
+        };
+
+        ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <21 22>;
+        };
+
+        ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <20 21>;
+        };
+
+        ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <22 23>;
         };
     };
 
