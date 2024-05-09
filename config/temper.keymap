@@ -155,7 +155,7 @@
 &none     &none     &none      &none      &none     &kp PSCRN  &kp INSERT  &kp HOME  &kp PG_UP  &kp TAB
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp RALT  &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT  &none
 &none     &none     &none      &none      &none     &none      &kp DEL     &kp END   &kp PG_DN  &kp GRAVE
-                    &trans     &trans     &none     &trans     &trans      &trans
+                    &trans     &trans     &trans    &trans     &trans      &trans
             >;
         };
 
