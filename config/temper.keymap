@@ -20,12 +20,12 @@
 
         f_cond {
             if-layers = <1 2>;
-            then-layer = <5>;
+            then-layer = <6>;
         };
 
         bt_cond {
-            if-layers = <3 4>;
-            then-layer = <6>;
+            if-layers = <4 5>;
+            then-layer = <7>;
         };
     };
 
@@ -128,7 +128,7 @@
 &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y        &kp U         &kp I               &kp O        &kp P
 &lhm LGUI A  &lhm LALT S  &lhm LCTRL D  &lhm LSHFT F  &lhm RALT G  &rhm RALT H  &rhm LSHFT J  &rhm LCTRL K        &rhm LALT L  &rhm LGUI SEMI
 &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N        &kp M         &kp COMMA           &kp DOT      &kp FSLH
-                          &lt 3 GRAVE   &lt 2 ESC     &kp TAB      &kp RET      &lt 1 SPACE   &lt_super_bspc 4 0
+                          &lt 5 GRAVE   &lt 2 ESC     &lt 3 TAB    &kp RET      &lt 1 SPACE   &lt_super_bspc 4 0
             >;
         };
 
@@ -150,12 +150,12 @@
             >;
         };
 
-        media_numpad_layer {
+        numpad_layer {
             bindings = <
-&kp C_BRI_UP  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp COMMA  &kp FSLH   &kp N7  &kp N8  &kp N9  &kp MINUS
-&kp C_BRI_DN  &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT       &kp DOT    &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS
-&none         &none       &none              &kp UNDER        &kp COLON  &none      &kp N1  &kp N2  &kp N3  &kp EQUAL
-                          &trans             &trans           &trans     &kp N0     &trans  &trans
+&none  &none  &none   &none   &kp COMMA  &kp FSLH   &kp N7  &kp N8  &kp N9  &kp MINUS
+&none  &none  &none   &none   &kp DOT    &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS
+&none  &none  &none   &none   &kp COLON  &kp UNDER  &kp N1  &kp N2  &kp N3  &kp EQUAL
+              &trans  &trans  &trans     &kp N0     &trans  &trans
             >;
         };
 
@@ -165,6 +165,15 @@
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp RALT  &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT  &none
 &none     &none     &none      &none      &none     &none      &kp DEL     &kp END   &kp PG_DN  &kp GRAVE
                     &none      &none      &none     &none      &none       &none
+            >;
+        };
+
+        media_layer {
+            bindings = <
+&kp C_BRI_UP          &kp C_MUTE          &kp C_VOLUME_DOWN         &kp C_VOLUME_UP         &kp LA(LC(UP))    &none     &none     &none   &none      &none
+&kp C_BRI_DN          &kp C_PREV          &kp C_PLAY_PAUSE          &kp C_NEXT              &kp LA(LC(DOWN))  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+&kp LS(LA(LC(DOWN)))  &kp LS(LA(LC(UP)))  &kp LS(LA(LC(LG(DOWN))))  &kp LS(LA(LC(LG(UP))))  &none             &none     &none     &none   &none      &none
+                                          &none                     &none                   &none             &none     &none     &none
             >;
         };
 
