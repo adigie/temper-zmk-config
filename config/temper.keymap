@@ -188,10 +188,10 @@
 
         bt_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none           &bt BT_NXT  &bt BT_PRV  &none  &none
-&none         &none         &none         &none         &none         &none           &none       &none       &none  &none
-&none         &none         &none         &none         &none         &none           &none       &none       &none  &none
-                            &none         &none         &bt BT_CLR    &bt BT_CLR_ALL  &none       &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LG(L)              &bt BT_NXT  &bt BT_PRV  &none  &none
+&none         &none         &none         &none         &none         &kp LS(LA(LC(LG(S))))  &none       &none       &none  &none
+&none         &none         &none         &none         &none         &kp LS(LA(LC(LG(H))))  &none       &none       &none  &none
+                            &none         &none         &bt BT_CLR    &bt BT_CLR_ALL         &none       &none
             >;
         };
     };
