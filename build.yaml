@@ -19,3 +19,4 @@ include:
     shield: temper_right
   - board: nrf52840dongle_nrf52840
     shield: temper_dongle
+    snippet: studio-rpc-usb-uart
